@@ -4,7 +4,10 @@
   <artifactId>ci-webapp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-   
+   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
   <dependencies>
 <dependency>
 <groupId>junit</groupId>
@@ -16,5 +19,12 @@
  <artifactId>ojdbc8</artifactId>
  <version>18.3.0.0</version>
 </dependency>
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.0</version>
+    <scope>provided</scope>
+</dependency>
+
 </dependencies>
 </project>
